@@ -77,7 +77,7 @@
   
   const keys = document.querySelectorAll('.key');
   //array of elements (keys) need to be looped over to hit each one
-  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+  keys.forEach(key => key.addEventListener('transitionend', removeTransition));//listens for end of transition can listen for animationend event as well
   window.addEventListener('keydown', playSound);
 
 </script>
